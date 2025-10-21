@@ -1,0 +1,21 @@
+.profilecard {
+  border: 1px solid gray;
+  padding: 20px;
+  max-width: 400px;
+  background-color: antiquewhite;
+  margin: 30px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+h2{
+  color:rgb(201, 188, 75);
+  text-align: center;
+  margin: 10px;
+}
