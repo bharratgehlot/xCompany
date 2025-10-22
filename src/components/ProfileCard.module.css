@@ -1,21 +1,249 @@
 .profilecard {
-  border: 1px solid gray;
-  padding: 20px;
-  max-width: 400px;
-  background-color: antiquewhite;
-  margin: 30px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 350px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 15px auto;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-h2{
-  color:rgb(201, 188, 75);
+h2 {
+  color: #2c3e50;
   text-align: center;
-  margin: 10px;
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.info {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.info p {
+  color: #2c3e50;
+  font-size: 1em;
+  margin: 5px 0;
+  text-shadow: none;
+}
+
+.bio {
+  background-color: rgba(255,255,255,0.7);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-style: italic;
+  color: #2c3e50;
+  font-size: 0.95em;
+  text-shadow: none;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.emailButton1 {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 8px 15px;
+  font-family: inherit;
+  background-color: #3498db;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.3s;
+  width: 100%;
+  font-weight: bold;
+}
+
+.emailButton1:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.skillsButton {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 8px 15px;
+  font-family: inherit;
+  background-color: #e74c3c;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.3s;
+  width: 100%;
+  font-weight: bold;
+}
+
+.skillsButton:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.statusButton {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 8px 15px;
+  font-family: inherit;
+  background-color: #f39c12;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.3s;
+  width: 100%;
+  font-weight: bold;
+}
+
+.statusButton:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+}
+
+.likeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  border: 2px solid #e91e63;
+  width: 50px;
+  height: 50px;
+  font-family: inherit;
+  background-color: #fff;
+  color: #e91e63;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.likeButton:hover {
+  background-color: #e91e63;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.skillsList {
+  background-color: rgba(255,255,255,0.8);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.email {
+  background-color: rgba(255,255,255,0.8);
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .profilecard {
+    max-width: 320px;
+    margin: 15px;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .profilecard {
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .likeButton {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    font-size: 0.9em;
+  }
+  
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  .buttonContainer {
+    gap: 8px;
+  }
+  
+  .emailButton1, .skillsButton, .statusButton {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .profilecard {
+    max-width: 280px;
+    padding: 15px;
+  }
+  
+  .likeButton {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8em;
+  }
+  
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  h2 {
+    font-size: 1.1em;
+  }
+  
+  .bio {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+  
+  .info p {
+    font-size: 0.9em;
+  }
+  
+  .emailButton1, .skillsButton, .statusButton {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
 }
