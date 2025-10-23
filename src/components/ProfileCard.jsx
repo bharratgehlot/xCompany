@@ -37,7 +37,7 @@ function ProfileCard(){
     <button className={style.likeButton} onClick={likeIncrement}>❤️ {likeButton}</button>
     
     <h2>Ankita Sharma</h2>
-    <img src="profilephoto.jpg" alt='Ankita Sharma'/>
+    <img className={style.image} src="profilephoto.jpg" alt='Ankita Sharma'/>
     
     <div className={style.info}>
       <p><strong>Age:</strong> 24</p>

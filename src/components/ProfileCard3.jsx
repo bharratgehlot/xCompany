@@ -46,7 +46,7 @@ function ProfileCard3() {
       </button>
       
       <h2>Vishkanya</h2>
-      <img src="profilephoto3.jpg" alt="Vishkanya" />
+      <img className={style.image} src="profilephoto3.jpg" alt="Vishkanya" />
       
       <div className={style.info}>
         <p><strong>Age:</strong> 20</p>
