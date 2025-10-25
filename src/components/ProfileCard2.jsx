@@ -5,11 +5,18 @@ function ProfileCard2(){
 
   // amazonq-ignore-next-line
   const [emailButton, setEmailButton] = useState(false)
-  const [likeButton, setLikeButton] = useState(0)
+
+  const [likeButton, setLikeButton] = useState(()=>{
+    return parseInt(localStorage.getItem('profile-card2-likes')) || 0 
+  })
+
   const skillArrray = ["employee management","team lead", "mentor"," Project Manager"]
   const [showSkills, setShowSkills] = useState(false)
-    const [onlineStatus, setOnlineStatus] = useState(false)
 
+
+const [onlineStatus, setOnlineStatus] = useState(()=> {
+    return JSON.parse(localStorage.getItem('saved-status2')) || false
+  })
 
 
 
@@ -25,14 +32,17 @@ function ProfileCard2(){
 
 
    function likeIncrement() {
-    setLikeButton(likeButton+1)
+    const newLikes = likeButton + 1
+    setLikeButton(newLikes)
+    localStorage.setItem('profile-card2-likes' ,newLikes)
   }
 
   
   const toggleOnlineStatus = () => {
-    setOnlineStatus(!onlineStatus)
+    const saveOnlineStatus = !onlineStatus
+    setOnlineStatus(saveOnlineStatus)
+    localStorage.setItem('saved-status2', JSON.stringify(saveOnlineStatus))
   }
-
   function showStatus(){
     if (onlineStatus) {
       return <span>🟢Online</span>

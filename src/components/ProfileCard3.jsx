@@ -4,11 +4,16 @@ import style from "./ProfileCard.module.css";
 function ProfileCard3() {
   // amazonq-ignore-next-line
   const [emailButton, setEmailButton] = useState(false);
-  const [likeButton, setLikeButton] = useState(0);
+  const [likeButton, setLikeButton] = useState(()=>{
+    return parseInt(localStorage.getItem('profile-card3-likes')) || 0
+  })
   const skillArrray = ["frontend design", "UI/UX", "Snake hunter", "design trainee"]
   const [showSkills, setShowSkills] = useState(false)
-    const [onlineStatus, setOnlineStatus] = useState(false)
 
+
+const [onlineStatus, setOnlineStatus] = useState(()=> {
+    return JSON.parse(localStorage.getItem('saved-status3')) || false
+  })
 
 
 
@@ -17,7 +22,9 @@ function ProfileCard3() {
   }
 
   function likeIncrement() {
-    setLikeButton(likeButton + 1);
+    const newLikes = likeButton + 1
+    setLikeButton(newLikes);
+    localStorage.setItem('profile-card3-likes', newLikes)
   }
 
 
@@ -27,9 +34,11 @@ function ProfileCard3() {
 
   
   const toggleOnlineStatus = () => {
-    setOnlineStatus(!onlineStatus)
+    const saveOnlineStatus = !onlineStatus
+    setOnlineStatus(saveOnlineStatus)
+    localStorage.setItem('saved-status3', JSON.stringify(saveOnlineStatus))
   }
-
+  
   function showStatus(){
     if (onlineStatus) {
       return <span>🟢Online</span>

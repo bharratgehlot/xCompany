@@ -5,24 +5,35 @@ function ProfileCard(){
 
   // amazonq-ignore-next-line
   const [emailButton, setEmailButton] = useState(false)
-  const [likeButton, setLikeButton] = useState(0)
+
+  const [likeButton, setLikeButton] = useState(()=>{
+    return parseInt(localStorage.getItem('profile-card1-likes')) || 0 
+  })
+
   const [showSkills, setShowSkills] = useState(false)
-  const [onlineStatus, setOnlineStatus] = useState(false)
+
+  const [onlineStatus, setOnlineStatus] = useState(()=> {
+    return JSON.parse(localStorage.getItem('saved-status1')) || false
+  })
 
  function toggleEmail() {
     setEmailButton(!emailButton);
   };
 
   function likeIncrement() {
-    setLikeButton(likeButton+1)
+    const newLikes = likeButton + 1
+    setLikeButton(newLikes)
+    localStorage.setItem('profile-card1-likes', newLikes)
   }
 
   const toggleSkills = () => {
-    setShowSkills(!showSkills)
+        setShowSkills(!showSkills)
   }
 
   const toggleOnlineStatus = () => {
-    setOnlineStatus(!onlineStatus)
+    const saveOnlineStatus = !onlineStatus
+    setOnlineStatus(saveOnlineStatus)
+    localStorage.setItem('saved-status1', JSON.stringify(saveOnlineStatus))
   }
 
   function showStatus(){

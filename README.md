@@ -1,7 +1,7 @@
 # Initial Version v1.0 
 
 Basic Features
-Skills Learned: project setup, state management, 
+Skills Learned: project setup, state management, syntax, 
 
 # Version v1.1
 
