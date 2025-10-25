@@ -2,8 +2,8 @@ import profileData from "../data/profiles.json"
 import style from "./ProfileCard.module.css";
 import { useState } from "react";
 
-function ProfileCard4() {
-  const profile = profileData[0]
+function ProfileCard4({sortBy}) {
+  //const profile = profileData[0]
 
   const [likeButton, setLikeButton] = useState(()=>{
     return parseInt(localStorage.getItem('profile-card4-likes')) || 0
@@ -15,6 +15,14 @@ function ProfileCard4() {
 const [onlineStatus, setOnlineStatus] = useState(()=> {
     return JSON.parse(localStorage.getItem('saved-status4')) || false
   })
+
+   const sortedProfiles = [...profileData].sort((a, b) => {
+    if (sortBy === "name") return a.name.localeCompare(b.name);
+    if (sortBy === "age") return a.age - b.age;
+    return 0;
+  });
+  
+  const profile = sortedProfiles[0] // First sorted profile
 
   function toggleEmail() {
     setEmailButton(!emailButton);

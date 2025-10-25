@@ -11,15 +11,6 @@ import PropProfileCard from "./components/PropProfileCard";
 function App() {
   const [sortBy, setSortBy] = useState("name");
 
-  const sortedProfiles = [...profileData].sort((a, b) => {
-    if (sortBy === "name") return a.name.localeCompare(b.name);
-    if (sortBy === "age") return a.age - b.age;
-    return 0;
-  });
-
-  {
-    sortedProfiles.map((profile) => <ProfileCard key={profile.id} />);
-  }
 
   return (
     <>
@@ -32,8 +23,8 @@ function App() {
           <ProfileCard />
           <ProfileCard2 />
           <ProfileCard3 />
-          <ProfileCard4 />
-          <ProfileCard5 />
+          <ProfileCard4 sortBy={sortBy}/>
+          <ProfileCard5 sortBy={sortBy}/>
 
           <PropProfileCard
             name="Kiran Verma"
