@@ -1,123 +1,143 @@
 import { useState } from "react";
-import profileData from "./data/profiles.json";
 // amazonq-ignore-next-line
 
 import PropProfileCard from "./components/PropProfileCard";
 
 function App() {
-
   return (
     <>
       <div>
-        <p>Hire top talent in the industry at affordable cost. </p>
-        <h1>THE PROFESSIONALS</h1>
+        <p>get hired in top companies easy the xCompany </p>
+        <h1>GREAT COMPANIES FOR GREAT PROFESSIONALS</h1>
         <div className="card-container">
           <PropProfileCard
-            name="Radha"
-            age="25"
-            role="Fresh Talent"
-            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
-            skills="acting, modeling, insta queen, tv acctress"
-            email="avikagor2@gmail.com"
-            image="profilephoto.jpg"
-            alt="Manisha borana photo"
-            id="1"
+            name="TechNova Solutions Pvt. Ltd."
+            about="TechNova Solutions is a global IT firm specializing in full-stack web and mobile development, cloud services, and AI-driven business automation for enterprises."
+            founded="2015"
+            employees="200+"
+            location="Bangalore, India"
+            email="contact@technova.in"
+            website="https://technova.in"
+            image="technova_logo.jpg"
+            alt="TechNova company logo"
+            id="201"
           />
 
           <PropProfileCard
-            name="Patrika Varma"
-            age="19"
-            role="Fresh Talent"
-            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
-            skills="acting, modeling, insta queen, tv acctress"
-            email="avikagor2@gmail.com"
-            image="profilephoto2.jpg"
-            alt="Manisha borana photo"
-            id="2"
+            name="CloudEdge Technologies"
+            about="CloudEdge Technologies empowers businesses to transition seamlessly to the cloud, leveraging AWS, Azure, and GCP platforms for scalability and automation."
+            founded="2018"
+            employees="120+"
+            location="Hyderabad, India"
+            email="info@cloudedge.tech"
+            website="https://cloudedge.tech"
+            image="cloudedge_logo.jpg"
+            alt="CloudEdge Technologies logo"
+            id="202"
           />
 
           <PropProfileCard
-            name="Vishaka"
-            age="28"
-            role="Fresh Talent"
-            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
-            skills="acting, modeling, insta queen, tv acctress"
-            email="avikagor2@gmail.com"
-            image="profilephoto3.jpg"
-            alt="Manisha borana photo"
-            id="3"
+            name="NextGen IT Consulting"
+            about="NextGen IT Consulting delivers enterprise-grade digital transformation, cybersecurity, and IT strategy services for clients across the finance and manufacturing sectors."
+            founded="2012"
+            employees="500+"
+            location="Pune, India"
+            email="connect@nextgenit.com"
+            website="https://nextgenit.com"
+            image="nextgen_logo.jpg"
+            alt="NextGen IT Consulting logo"
+            id="203"
           />
 
           <PropProfileCard
-            name="Komolika"
-            age="35"
-            role="Fresh Talent"
-            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
-            skills="acting, modeling, insta queen, tv acctress"
-            email="avikagor2@gmail.com"
-            image="profilephoto4.jpg"
-            alt="Manisha borana photo"
-            id="4"
+            name="CodeWave Labs"
+            about="CodeWave Labs helps startups design, develop, and launch products rapidly using MERN, Flutter, and Firebase. Recognized for modern UI/UX and agile delivery."
+            founded="2021"
+            employees="50+"
+            location="Mumbai, India"
+            email="hello@codewave.io"
+            website="https://codewave.io"
+            image="codewave_logo.jpg"
+            alt="CodeWave Labs logo"
+            id="204"
           />
 
           <PropProfileCard
-            name="Madhvi"
-            age="34"
-            role="Fresh Talent"
-            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
-            skills="acting, modeling, insta queen, tv acctress"
-            email="avikagor2@gmail.com"
-            image="profilephoto5.jpg"
-            alt="Manisha borana photo"
-            id="5"
+            name="BlueCircuit Systems"
+            about="BlueCircuit Systems focuses on embedded software development, IoT device integration, and firmware solutions for smart industries and automation."
+            founded="2010"
+            employees="300+"
+            location="Chennai, India"
+            email="support@bluecircuit.com"
+            website="https://bluecircuit.com"
+            image="bluecircuit_logo.jpg"
+            alt="BlueCircuit Systems logo"
+            id="205"
           />
 
           <PropProfileCard
-            name="Kiran Verma"
-            age="23"
-            role="HR Manager"
-            bio="Hello, Im Kiran Verma from Banaras. Im married and HR PRofessional in my company"
-            skills="Human Resources, Payroll, Employee Management, Pimp"
-            email="kiranverma343@gmail.com"
-            image="profilephoto6.jpg"
-            alt="Kiran verna photo"
-            id="6"
+            name="QuantumBit Technologies"
+            about="QuantumBit Technologies specializes in AI, ML, and data-driven analytics, helping organizations make intelligent business decisions through predictive insights."
+            founded="2016"
+            employees="180+"
+            location="Delhi NCR, India"
+            email="info@quantumbit.ai"
+            website="https://quantumbit.ai"
+            image="quantumbit_logo.jpg"
+            alt="QuantumBit Technologies logo"
+            id="206"
           />
 
           <PropProfileCard
-            name="Manisha Borana"
-            age="20"
-            role="Software Engineer"
-            bio="Hello, Im Software Engineer by Mistake. I write code by Mistake"
-            skills="Code Review, Data Anaysis, Code Writing, Software Development"
-            email="manishab321@gmail.com"
-            image="profilephoto7.jpg"
-            alt="Manisha borana photo"
-            id="7"
+            name="CyberNest Solutions"
+            about="CyberNest Solutions provides end-to-end cybersecurity services including threat monitoring, penetration testing, and compliance management for global clients."
+            founded="2013"
+            employees="220+"
+            location="Kolkata, India"
+            email="security@cybernest.in"
+            website="https://cybernest.in"
+            image="cybernest_logo.jpg"
+            alt="CyberNest Solutions logo"
+            id="207"
           />
 
           <PropProfileCard
-            name="Shardha Kapoor"
-            age="25"
-            role="Actress"
-            bio="Shradha Kapoor, top quality acctress by professional. Knows how to deal with producers and directors"
-            skills="acting, modeling, brand promotion, good figure, babydoll, itemsongs"
-            email="shardhakapoor323@gmail.com"
-            image="profilephoto8.jpg"
-            alt="Shardha Kapoor photo"
-            id="8"
+            name="PixelSoft Technologies"
+            about="PixelSoft Technologies builds enterprise mobile and web applications with a strong emphasis on performance, scalability, and clean user interfaces."
+            founded="2014"
+            employees="260+"
+            location="Ahmedabad, India"
+            email="contact@pixelsoft.co"
+            website="https://pixelsoft.co"
+            image="pixelsoft_logo.jpg"
+            alt="PixelSoft Technologies logo"
+            id="208"
           />
 
           <PropProfileCard
-            name="Avika Gor"
-            age="22"
-            role="Fresh Talent"
-            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
-            skills="acting, modeling, insta queen, tv acctress"
-            email="avikagor2@gmail.com"
-            image="profilephoto9.jpg"
-            alt="Manisha borana photo"
-            id="9"
+            name="NeuralHub AI Pvt. Ltd."
+            about="NeuralHub AI develops deep learning models, computer vision tools, and NLP systems that automate decision-making processes for healthcare and finance industries."
+            founded="2019"
+            employees="90+"
+            location="Bangalore, India"
+            email="hello@neuralhub.ai"
+            website="https://neuralhub.ai"
+            image="neuralhub_logo.jpg"
+            alt="NeuralHub AI Pvt. Ltd. logo"
+            id="209"
+          />
+
+          <PropProfileCard
+            name="ByteWave Technologies"
+            about="ByteWave Technologies delivers digital solutions in e-commerce, blockchain, and fintech development, helping startups scale efficiently through technology."
+            founded="2017"
+            employees="150+"
+            location="Jaipur, India"
+            email="info@bytewave.in"
+            website="https://bytewave.in"
+            image="bytewave_logo.jpg"
+            alt="ByteWave Technologies logo"
+            id="210"
           />
         </div>
       </div>

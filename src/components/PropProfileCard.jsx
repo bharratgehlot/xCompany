@@ -57,14 +57,23 @@ function PropProfileCard(props) {
 
       <div className={style.info}>
         <p>
-          <strong>Age:</strong> {props.age}
+          <strong>Founded:</strong> {props.founded}
         </p>
         <p>
-          <strong>Role:</strong> {props.role}
+          <strong>Employee:</strong> {props.employees}
         </p>
+
+        <p>
+          <strong>Location:</strong> {props.location}
+        </p>
+
+        <p>
+          <strong>Website:</strong> {props.website}
+        </p>
+
       </div>
 
-      <div className={style.bio}>{props.bio} </div>
+      <div className={style.bio}>{props.about} </div>
 
       <div className={style.buttonContainer}>
         <button className={style.statusButton} onClick={toggleOnlineStatus}>
