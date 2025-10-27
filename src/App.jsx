@@ -1,30 +1,76 @@
 import { useState } from "react";
-import ProfileCard from "./components/ProfileCard";
 import profileData from "./data/profiles.json";
 // amazonq-ignore-next-line
-import ProfileCard2 from "./components/ProfileCard2";
-import ProfileCard3 from "./components/ProfileCard3";
-import ProfileCard4 from "./components/ProfileCard4";
-import ProfileCard5 from "./components/ProfileCard5";
+
 import PropProfileCard from "./components/PropProfileCard";
 
 function App() {
-  const [sortBy, setSortBy] = useState("name");
-
 
   return (
     <>
       <div>
         <p>Hire top talent in the industry at affordable cost. </p>
         <h1>THE PROFESSIONALS</h1>
-        <button onClick={() => setSortBy("name")}> Sort By Name</button>
-        <button onClick={() => setSortBy("age")}> Sort By Age</button>
         <div className="card-container">
-          <ProfileCard />
-          <ProfileCard2 />
-          <ProfileCard3 />
-          <ProfileCard4 sortBy={sortBy}/>
-          <ProfileCard5 sortBy={sortBy}/>
+          <PropProfileCard
+            name="Radha"
+            age="25"
+            role="Fresh Talent"
+            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
+            skills="acting, modeling, insta queen, tv acctress"
+            email="avikagor2@gmail.com"
+            image="profilephoto.jpg"
+            alt="Manisha borana photo"
+            id="1"
+          />
+
+          <PropProfileCard
+            name="Patrika Varma"
+            age="19"
+            role="Fresh Talent"
+            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
+            skills="acting, modeling, insta queen, tv acctress"
+            email="avikagor2@gmail.com"
+            image="profilephoto2.jpg"
+            alt="Manisha borana photo"
+            id="2"
+          />
+
+          <PropProfileCard
+            name="Vishaka"
+            age="28"
+            role="Fresh Talent"
+            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
+            skills="acting, modeling, insta queen, tv acctress"
+            email="avikagor2@gmail.com"
+            image="profilephoto3.jpg"
+            alt="Manisha borana photo"
+            id="3"
+          />
+
+          <PropProfileCard
+            name="Komolika"
+            age="35"
+            role="Fresh Talent"
+            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
+            skills="acting, modeling, insta queen, tv acctress"
+            email="avikagor2@gmail.com"
+            image="profilephoto4.jpg"
+            alt="Manisha borana photo"
+            id="4"
+          />
+
+          <PropProfileCard
+            name="Madhvi"
+            age="34"
+            role="Fresh Talent"
+            bio="Avika Gor, done many serials and shows, known for her acting skills along with her glamerous body"
+            skills="acting, modeling, insta queen, tv acctress"
+            email="avikagor2@gmail.com"
+            image="profilephoto5.jpg"
+            alt="Manisha borana photo"
+            id="5"
+          />
 
           <PropProfileCard
             name="Kiran Verma"
@@ -39,18 +85,6 @@ function App() {
           />
 
           <PropProfileCard
-            name="Shardha Kapoor"
-            age="25"
-            role="Actress"
-            bio="Shradha Kapoor, top quality acctress by professional. Knows how to deal with producers and directors"
-            skills="acting, modeling, brand promotion, good figure, babydoll, itemsongs"
-            email="shardhakapoor323@gmail.com"
-            image="profilephoto8.jpg"
-            alt="Shardha Kapoor photo"
-            id="8"
-          />
-
-          <PropProfileCard
             name="Manisha Borana"
             age="20"
             role="Software Engineer"
@@ -60,6 +94,18 @@ function App() {
             image="profilephoto7.jpg"
             alt="Manisha borana photo"
             id="7"
+          />
+
+          <PropProfileCard
+            name="Shardha Kapoor"
+            age="25"
+            role="Actress"
+            bio="Shradha Kapoor, top quality acctress by professional. Knows how to deal with producers and directors"
+            skills="acting, modeling, brand promotion, good figure, babydoll, itemsongs"
+            email="shardhakapoor323@gmail.com"
+            image="profilephoto8.jpg"
+            alt="Shardha Kapoor photo"
+            id="8"
           />
 
           <PropProfileCard
