@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://bharratgehlot.github.io/react-assignment-1/",
+  "homepage": "https://bharratgehlot.github.io/xCompany/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
