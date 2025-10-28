@@ -10,11 +10,11 @@ function PropProfileCard(props) {
   })
   
  
-  const [showSkills, setShowSkills] = useState(false);
+  const [showCurrentOpening, setshowCurrentOpening] = useState(false);
 
 
  const [onlineStatus, setOnlineStatus] = useState(()=> {
-    return JSON.parse(localStorage.getItem(`saved-status5${props.id}`)) || false
+    return JSON.parse(localStorage.getItem(`saved-status${props.id}`)) || false
   })
 
   function toggleEmail() {
@@ -23,18 +23,18 @@ function PropProfileCard(props) {
 
    function likeIncrement() {
     const newLikes = likeButton + 1
-    setLikeButton(newLikes)
+    setLikeButton(newLikes);
     localStorage.setItem(`profile${props.id}-likes`, newLikes)
   }
 
-  const toggleSkills = () => {
-    setShowSkills(!showSkills);
+  const toggleshowCurrentOpening = () => {
+    setshowCurrentOpening(!showCurrentOpening);
   };
 
     const toggleOnlineStatus = () => {
     const saveOnlineStatus = !onlineStatus
-    setOnlineStatus(saveOnlineStatus)
-    localStorage.setItem(`saved-status5${props.id}`, JSON.stringify(saveOnlineStatus))
+    setOnlineStatus(saveOnlineStatus);
+    localStorage.setItem(`saved-status${props.id}`, JSON.stringify(saveOnlineStatus))
   }
   
 
@@ -60,7 +60,7 @@ function PropProfileCard(props) {
           <strong>Founded:</strong> {props.founded}
         </p>
         <p>
-          <strong>Employee:</strong> {props.employees}
+          <strong>Employees:</strong> {props.employees}
         </p>
 
         <p>
@@ -68,8 +68,9 @@ function PropProfileCard(props) {
         </p>
 
         <p>
-          <strong>Website:</strong> {props.website}
+          <strong>Website:</strong> <a href={props.website} target="_blank" rel="noopener noreferrer">{props.website}</a>
         </p>
+
 
       </div>
 
@@ -80,8 +81,8 @@ function PropProfileCard(props) {
           Status: {showStatus()}
         </button>
 
-        <button className={style.skillsButton} onClick={toggleSkills}>
-          Skills: {showSkills ? "Hide" : "Show"}
+        <button className={style.skillsButton} onClick={toggleshowCurrentOpening}>
+          Current Openings: {showCurrentOpening ? "Hide" : "Show"}
         </button>
 
         <button className={style.emailButton1} onClick={toggleEmail}>
@@ -89,9 +90,9 @@ function PropProfileCard(props) {
         </button>
       </div>
 
-      {showSkills && (
+      {showCurrentOpening && (
         <div className={style.skillsList}>
-          <strong>Skills:</strong> {props.skills}
+          <strong>Current Openings:</strong> {props.currentOpening}
         </div>
       )}
 
