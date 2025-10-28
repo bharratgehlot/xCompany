@@ -1,6 +1,3 @@
-import { useState } from "react";
-// amazonq-ignore-next-line
-
 import PropProfileCard from "./components/PropProfileCard";
 
 function App() {
@@ -10,6 +7,7 @@ function App() {
         <p>get hired in top companies easy the xCompany </p>
         <h1>GREAT COMPANIES FOR GREAT PROFESSIONALS</h1>
         <div className="card-container">
+
           <PropProfileCard
             name="TechNova Solutions Pvt. Ltd."
             about="TechNova Solutions is a global IT firm specializing in full-stack web and mobile development, cloud services, and AI-driven business automation for enterprises."
@@ -18,7 +16,7 @@ function App() {
             location="Bangalore, India"
             email="contact@technova.in"
             website="https://technova.in"
-            image="technova_logo.jpg"
+            image="profilephoto.jpg"
             alt="TechNova company logo"
             id="201"
           />
@@ -31,7 +29,7 @@ function App() {
             location="Hyderabad, India"
             email="info@cloudedge.tech"
             website="https://cloudedge.tech"
-            image="cloudedge_logo.jpg"
+            image="profilephoto2.jpg"
             alt="CloudEdge Technologies logo"
             id="202"
           />
@@ -44,7 +42,7 @@ function App() {
             location="Pune, India"
             email="connect@nextgenit.com"
             website="https://nextgenit.com"
-            image="nextgen_logo.jpg"
+            image="profilephoto3.jpg"
             alt="NextGen IT Consulting logo"
             id="203"
           />
@@ -57,7 +55,7 @@ function App() {
             location="Mumbai, India"
             email="hello@codewave.io"
             website="https://codewave.io"
-            image="codewave_logo.jpg"
+            image="profilephoto4.jpg"
             alt="CodeWave Labs logo"
             id="204"
           />
@@ -70,7 +68,7 @@ function App() {
             location="Chennai, India"
             email="support@bluecircuit.com"
             website="https://bluecircuit.com"
-            image="bluecircuit_logo.jpg"
+            image="profilephoto5.jpg"
             alt="BlueCircuit Systems logo"
             id="205"
           />
@@ -83,7 +81,7 @@ function App() {
             location="Delhi NCR, India"
             email="info@quantumbit.ai"
             website="https://quantumbit.ai"
-            image="quantumbit_logo.jpg"
+            image="profilephoto6.jpg"
             alt="QuantumBit Technologies logo"
             id="206"
           />
@@ -96,7 +94,7 @@ function App() {
             location="Kolkata, India"
             email="security@cybernest.in"
             website="https://cybernest.in"
-            image="cybernest_logo.jpg"
+            image="profilephoto7.jpg"
             alt="CyberNest Solutions logo"
             id="207"
           />
@@ -109,7 +107,7 @@ function App() {
             location="Ahmedabad, India"
             email="contact@pixelsoft.co"
             website="https://pixelsoft.co"
-            image="pixelsoft_logo.jpg"
+            image="profilephoto8.jpg"
             alt="PixelSoft Technologies logo"
             id="208"
           />
@@ -122,27 +120,14 @@ function App() {
             location="Bangalore, India"
             email="hello@neuralhub.ai"
             website="https://neuralhub.ai"
-            image="neuralhub_logo.jpg"
+            image="profilephoto9.jpg"
             alt="NeuralHub AI Pvt. Ltd. logo"
             id="209"
-          />
-
-          <PropProfileCard
-            name="ByteWave Technologies"
-            about="ByteWave Technologies delivers digital solutions in e-commerce, blockchain, and fintech development, helping startups scale efficiently through technology."
-            founded="2017"
-            employees="150+"
-            location="Jaipur, India"
-            email="info@bytewave.in"
-            website="https://bytewave.in"
-            image="bytewave_logo.jpg"
-            alt="ByteWave Technologies logo"
-            id="210"
           />
         </div>
       </div>
       <div>
-        <p>We deliver projects faster then babies</p>
+        <p>We deliver projects faster than babies</p>
       </div>
     </>
   );
