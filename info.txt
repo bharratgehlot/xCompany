@@ -1,0 +1,31 @@
+   <PropProfileCard
+            name="Intuit"
+            about="Global fintech company behind QuickBooks, TurboTax, and Credit Karma."
+            founded="1983"
+            employees="18,000+"
+            location="Bengaluru"
+            email="careers@intuit.com"
+            website="https://www.intuit.com"
+            image="intuit_logo.jfif"
+            alt="Intuit company logo"
+            id="34"
+            type="Fintech"
+            currentOpening="https://careers.intuit.com"
+            itCompany="true"
+          />
+
+          <PropProfileCard
+            name="Placeholder"
+            about="20 words max"
+            founded="0000"
+            employees="500+"
+            location="Pune"
+            email="email"
+            website="https://website.com"
+            image="placeholder_logo.jfif"
+            alt="company logo"
+            id="35"
+            type=""
+            currentOpening=""
+            itCompany="true false"
+          />

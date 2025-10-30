@@ -9,36 +9,42 @@ function App() {
         <div className="card-container">
           <PropProfileCard
             name="Databricks"
+            banner="databricks_cover.jfif"
             about="Databricks, a leading Data and AI company, including 60% of Fortune 500, to harness data intelligently. this is databricks"
             founded="2013"
             employees="8,000+"
-            location="Banglore"
+            location="Bengaluru"
             email="none"
             website="https://databricks.com"
             image="databricks.jfif"
-            currentOpening="https://www.databricks.com/company/careers/open-positions"
+            currentOpening="careers@databricks.com"
             alt="databricks logo"
             id="1"
             type=""
+            itCompany="true"
           />
 
           <PropProfileCard
             name="NVIDIA"
+            banner="nvidia_cover.jfif"
             about="Founded in 1993, NVIDIA pioneered accelerated computing, revolutionized gaming and AI, and drives full-stack data-center innovation."
             founded="1993"
             employees="30,000+"
-            location="Banglore"
+            location="Bengaluru"
             email="accessiblecareers@nvidia.com"
-            website="http://www.nvidia.com/"
+            website="https://www.nvidia.com/"
             image="nvidia.jfif"
             currentOpening="https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
             alt="nvidia logo"
             id="2"
             type=""
+            itCompany="true"
           />
 
           <PropProfileCard
             name="Adobe Inc."
+            banner="adobe_cover.jfif"
+
             about="Global leader in creative and digital experience software, driving innovation with AI-powered tools."
             founded="1982"
             employees="30,709+ worldwide"
@@ -50,6 +56,7 @@ function App() {
             alt="adobe logo"
             id="3"
             type=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -65,6 +72,7 @@ function App() {
             id="4"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -80,6 +88,7 @@ function App() {
             id="5"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -95,6 +104,7 @@ function App() {
             id="6"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -110,6 +120,7 @@ function App() {
             id="7"
             type=""
             currentOpening=""
+            itCompany="false"
           />
 
           <PropProfileCard
@@ -125,6 +136,7 @@ function App() {
             id="8"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -140,6 +152,7 @@ function App() {
             id="9"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -155,10 +168,11 @@ function App() {
             id="10"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
-            name="Tata Consultancy Services (TCS)"
+            name="Tata Consultancy Services"
             about="India’s largest IT services and consulting firm delivering global digital and business transformation solutions."
             founded="1968"
             employees="600,000+"
@@ -170,6 +184,7 @@ function App() {
             id="11"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -185,6 +200,7 @@ function App() {
             id="12"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -200,6 +216,7 @@ function App() {
             id="13"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -215,6 +232,7 @@ function App() {
             id="14"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -230,6 +248,7 @@ function App() {
             id="15"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -245,6 +264,7 @@ function App() {
             id="16"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -260,6 +280,7 @@ function App() {
             id="17"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -275,6 +296,7 @@ function App() {
             id="18"
             type=""
             currentOpening=""
+            itCompany="true"
           />
 
           <PropProfileCard
@@ -406,7 +428,7 @@ function App() {
           />
 
           <PropProfileCard
-            name="Coca-Cola"
+            name="The Coca-Cola Company"
             about="World’s leading beverage company with over 500 brands."
             founded="1892"
             employees="80,000+"
@@ -454,7 +476,7 @@ function App() {
           />
 
           <PropProfileCard
-            name="Toyota"
+            name="Toyota Motor Corporation"
             about="World’s largest automobile manufacturer known for innovation and reliability."
             founded="1937"
             employees="370,000+"
@@ -517,41 +539,11 @@ function App() {
             itCompany="false"
           />
 
-          <PropProfileCard
-            name="Intuit"
-            about="Global fintech company behind QuickBooks, TurboTax, and Credit Karma."
-            founded="1983"
-            employees="18,000+"
-            location="Bengaluru"
-            email="careers@intuit.com"
-            website="https://www.intuit.com"
-            image="intuit_logo.jfif"
-            alt="Intuit company logo"
-            id="34"
-            type="Fintech"
-            currentOpening="https://careers.intuit.com"
-            itCompany="true"
-          />
-
-          <PropProfileCard
-            name="Placeholder"
-            about="20 words max"
-            founded="0000"
-            employees="500+"
-            location="Pune"
-            email="email"
-            website="https://website.com"
-            image="placeholder_logo.jfif"
-            alt="company logo"
-            id="35"
-            type=""
-            currentOpening=""
-            itCompany="true false"
-          />
+       
         </div>
       </div>
       <div>
-        <p>We deliver projects faster than babies</p>
+        <p>Global Innovation, In your hands</p>
       </div>
     </>
   );

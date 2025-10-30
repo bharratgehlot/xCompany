@@ -20,3 +20,14 @@ Add the following:
 6. Current Opening
 7. Company Sector
 8. Total employees
+
+supabase postgress: bharrat@123
+
+We will use Supabase in this project
+
+next features 
+
+nationality 
+banner 
+sort function
+search function
