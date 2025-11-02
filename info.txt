@@ -29,3 +29,5 @@
             currentOpening=""
             itCompany="true false"
           />
+
+          supabase postgress: bharrat@123

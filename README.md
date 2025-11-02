@@ -21,7 +21,7 @@ Add the following:
 7. Company Sector
 8. Total employees
 
-supabase postgress: bharrat@123
+
 
 We will use Supabase in this project
 
