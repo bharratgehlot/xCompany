@@ -31,3 +31,7 @@ nationality
 banner 
 sort function
 search function
+
+# Project paused
+
+will work on that after 1 January 2026
